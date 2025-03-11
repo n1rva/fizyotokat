@@ -19,3 +19,129 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Slider Dots */
+.slick-dots {
+  bottom: 20px;
+}
+
+.slick-dots li button:before {
+  color: white;
+  opacity: 0.5;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #5071FE;
+  opacity: 1;
+}
+
+/* Slider Container */
+.slick-slider {
+  position: relative;
+  overflow: hidden;
+  /* Yatay scroll'u engelle */
+}
+
+/* Slider Arrows */
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  background: rgba(148, 21, 21, 0.8);
+  border-radius: 50%;
+  display: flex !important;
+  /* Okları görünür yap */
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #5071FE;
+  font-size: 24px;
+  opacity: 1;
+}
+
+.slick-prev {
+  left: 3% !important;
+  z-index: 1;
+}
+
+.slick-next {
+  right: 3% !important;
+  z-index: 1;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background: rgb(150, 9, 9);
+}
+
+/* .slick-prev:before,
+.slick-next:before {
+  content: '';
+}
+
+.slick-prev {
+  background-image: url('/icons/left-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slick-next {
+  background-image: url('/icons/right-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+.bg-radial-gradient {
+  /* background: radial-gradient(circle at center bottom, #3a5bff 0%, #5071FE 30%, transparent 70%); */
+  background: #5071FE;
+}
+
+.glass-button {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.glass-button:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-in-out forwards;
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+
+.translate-y-20 {
+  transform: translateY(20px);
+}
+
+.translate-y-0 {
+  transform: translateY(0);
+}
