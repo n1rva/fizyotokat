@@ -43,20 +43,24 @@ export default function Home() {
 
   const faqData = [
     {
-      question: "Pilates ücretleri ne kadar?",
-      answer: "Üyelik ücretlerimiz aylık x TL'den başlamaktadır.",
-    },
-    {
-      question: "Pilates randevusunu nasıl alabilirim?",
-      answer: "İletişim sayfamızdan arama yapabilirsiniz.",
-    },
-    {
       question: "Çalışma saatleri nedir?",
-      answer: "Hafta içi 10:00 - 21:00, cumartesi 12:00 - 21:00.",
+      answer:
+        "Çalışma saatlerimiz 09.00-21.00'dır. Kurumumuz pazar günleri kapalıdır.",
     },
     {
       question: "Hangi hizmetler mevcut?",
-      answer: "Pilates, manuel terapi, egzersiz danışmanlığı.",
+      answer:
+        "Reformer pilates, hamile pilatesi, klinik pilates, skolyoz terapisi, sporcu yaralanmaları, manuel terapi, masaj, bireysel egzersiz ve duruş bozukluklarına yönelik danışmanlık hizmetleri vermekteyiz.",
+    },
+    {
+      question: "Hizmetlerimiz kimlere yönelik?",
+      answer:
+        "Hizmetlerimiz geniş bir yelpazede yer alıyor ve herkesi kapsayacak şekilde tasarlandı. Sporcular, hareketli bir yaşam tarzı benimseyenler, fiziksel rahatsızlıkları olanlar veya sadece sağlığını önemseyen herkes hizmetlerimizden yararlanabilir.",
+    },
+    {
+      question: "Nasıl randevu alabilirim?",
+      answer:
+        "İletişim sayfasında yer alan bilgiler üzerinden bizlere ulaşabilirsiniz.",
     },
   ];
 
@@ -67,53 +71,55 @@ export default function Home() {
   ];
 
   return (
-    <div className="">
-      <main className="w-full max-w-7xl flex flex-col md:flex-row items-center mt-10 px-4 md:px-0">
-        {/* Resim sadece mobilde gösterilsin ve üstte olsun */}
-        <div className="md:hidden w-full flex justify-center">
-          <div className="relative w-full h-64">
-            <Image
-              src="/images/hero-mobil.webp"
-              alt="Physiotherapy session"
-              fill
-              className="rounded-[20px] object-cover"
-            />
+    <div className="w-full">
+      <div className="bg-gradient-to-r from-blue-50 to-blue-100 flex justify-center ">
+        <div className="max-w-7xl flex  flex-col md:flex-row items-center my-10 px-4 lg:px-0 ">
+          {/* Resim sadece mobilde gösterilsin ve üstte olsun */}
+          <div className="md:hidden w-full flex justify-center">
+            <div className="relative w-full h-64">
+              <Image
+                src="/images/hero-mobil.webp"
+                alt="Physiotherapy session"
+                fill
+                className="rounded-[20px] object-cover"
+              />
+            </div>
+          </div>
+          {/* Metin içeriği */}
+          <div className="w-full px-6 py-8 md:w-1/2 md:px-0 text-left xl:mr-40">
+            <div className="text-4xl md:text-6xl font-medium leading-tight">
+              <h2 className="bg-gradient-to-b from-[#5170fe] to-gray-400 bg-clip-text text-transparent leading-tight">
+                Fizyotto Plus
+              </h2>
+              <h2 className="text-gray-600 text-2xl md:text-4xl leading-tight">
+                Tokat'ta Sağlıklı Yaşamın Adresi
+              </h2>
+            </div>
+            <p className="mt-4 text-gray-500 text-lg md:text-xl">
+              Uzman fizyoterapistlerimizle sağlığınıza değer katıyoruz.
+            </p>
+            <div className="mt-8">
+              <Link
+                href={"/takvim"}
+                className="hover:bg-[#7890f8] px-6 py-3 my-6 rounded-lg border text-white text-sm transition-all duration-300 bg-[#5170fe] hover:text-white"
+              >
+                Randevu takvimi
+              </Link>
+            </div>
+          </div>
+          {/* Resim sadece masaüstünde gösterilsin */}
+          <div className="hidden md:flex md:w-1/2 mt-6 md:mt-0 justify-center">
+            <div className="relative w-[450px] h-[600px]">
+              <Image
+                src="/images/hero.webp"
+                alt="Physiotherapy session"
+                fill
+                className="rounded-[80px] object-cover"
+              />
+            </div>
           </div>
         </div>
-        {/* Metin içeriği */}
-        <div className="w-full px-6 py-8 md:w-1/2 md:px-0 text-left">
-          <div className="text-4xl md:text-6xl font-medium leading-tight">
-            <h2 className="bg-gradient-to-b from-[#5170fe] to-gray-400 bg-clip-text text-transparent leading-tight">
-              Fizyotto Plus
-            </h2>
-            <h2 className="text-gray-600 text-2xl md:text-4xl leading-tight">
-              Tokat'ta Sağlıklı Yaşamın Adresi
-            </h2>
-          </div>
-          <p className="mt-4 text-gray-500 text-lg md:text-xl">
-            Uzman fizyoterapistlerimizle sağlığınıza değer katıyoruz.
-          </p>
-          <div className="mt-8">
-            <Link
-              href={"/takvim"}
-              className="hover:bg-[#7890f8] px-6 py-3 my-6 rounded-lg border text-white text-sm transition-all duration-300 bg-[#5170fe] hover:text-white"
-            >
-              Randevu takvimi
-            </Link>
-          </div>
-        </div>
-        {/* Resim sadece masaüstünde gösterilsin */}
-        <div className="hidden md:flex md:w-1/2 mt-6 md:mt-0 justify-center">
-          <div className="relative w-[450px] h-[600px]">
-            <Image
-              src="/images/hero.webp"
-              alt="Physiotherapy session"
-              fill
-              className="rounded-[80px] object-cover"
-            />
-          </div>
-        </div>
-      </main>
+      </div>
 
       {/* Fizyoterapist Bölümü */}
       <div className="min-h-screen bg-[#EFF3F8] flex flex-col items-center p-6 mt-20 md:mt-44">
@@ -148,11 +154,11 @@ export default function Home() {
           ].map((physio, index) => (
             <motion.div
               key={index}
-              className="flex flex-col md:flex-row items-center bg-white p-6 rounded-xl shadow-sm md:shadow-lg hover:shadow-2xl transition duration-300"
-              initial={{ opacity: 0, y: 50 }}
+              className="flex flex-col md:flex-row items-center bg-white p-6 rounded-xl shadow-sm md:shadow-lg transition duration-300"
+              initial={{ opacity: 0, y: 0 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
+              transition={{ duration: 0.7, ease: "easeOut" }}
             >
               <div className="relative h-64 w-64 rounded-xl overflow-hidden mb-6 md:mb-0 md:mr-6">
                 <Image
@@ -186,7 +192,7 @@ export default function Home() {
           ))}
         </div>
       </div>
-
+      {/* hizmetlerimiz */}
       <div className="min-h-screen bg-[#EFF3F8] flex flex-col items-center p-6 mt-20 md:mt-0">
         {/* Section Header */}
         <div className="w-full max-w-5xl text-center">
@@ -219,7 +225,7 @@ export default function Home() {
           ].map((service, index) => (
             <div
               key={index}
-              className="bg-[#EFF3F8] backdrop-blur-lg rounded-2xl shadow-md transform transition flex flex-col md:flex-row overflow-hidden"
+              className="bg-white backdrop-blur-lg rounded-2xl shadow-md transform transition flex flex-col md:flex-row overflow-hidden"
             >
               {/* Fotoğraf Alanı */}
               <div className="relative h-48 md:h-auto md:w-1/2">
@@ -243,14 +249,38 @@ export default function Home() {
           ))}
         </div>
       </div>
-
-      <div className="p-6 space-y-12 mt-20 md:mt-0">
-        <div className="w-full max-w-5xl text-center">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-700">
-            Salonumuz
+      {/* sss */}
+      <div className="p-12 space-y-12 mt-20 md:mt-0 bg-gray-50">
+        <div className="w-full  mx-auto">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-700 text-center">
+            Sıkça Sorulan Sorular
           </h2>
         </div>
-        <section>
+        <section className="max-w-5xl mx-auto">
+          <Accordion>
+            {faqData.map((item, index) => (
+              <AccordionItem key={index} title={item.question}>
+                <motion.p
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3 }}
+                  className="p-4"
+                >
+                  {item.answer}
+                </motion.p>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </section>
+      </div>
+      {/* salon */}
+      <div className="p-6 space-y-12 mt-20 md:mt-0">
+        <div className="w-full max-w-5xl text-center mx-auto">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-700">
+            Kurumumuz
+          </h2>
+        </div>
+        <section className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {galleryImages.map((src, index) => (
               <motion.img
@@ -271,30 +301,6 @@ export default function Home() {
               Daha Fazla Görüntü
             </Link>
           </div>
-        </section>
-      </div>
-
-      <div className="p-12 space-y-12 mt-20 md:mt-0">
-        <div className="w-full max-w-5xl ">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-700 text-center">
-            Sıkça Sorulan Sorular
-          </h2>
-        </div>
-        <section>
-          <Accordion>
-            {faqData.map((item, index) => (
-              <AccordionItem key={index} title={item.question}>
-                <motion.p
-                  initial={{ opacity: 0, y: -10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3 }}
-                  className="p-4"
-                >
-                  {item.answer}
-                </motion.p>
-              </AccordionItem>
-            ))}
-          </Accordion>
         </section>
       </div>
     </div>

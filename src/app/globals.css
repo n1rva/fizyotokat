@@ -80,22 +80,6 @@ body {
   background: rgb(150, 9, 9);
 }
 
-/* .slick-prev:before,
-.slick-next:before {
-  content: '';
-}
-
-.slick-prev {
-  background-image: url('/icons/left-arrow.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.slick-next {
-  background-image: url('/icons/right-arrow.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-} */
 
 .bg-radial-gradient {
   /* background: radial-gradient(circle at center bottom, #3a5bff 0%, #5071FE 30%, transparent 70%); */

@@ -2,15 +2,19 @@ import React from "react";
 
 const Iletisim = () => {
   return (
-    <section className="w-full min-h-screen p-2 my-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Başlık */}
-        <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            İletişim
-          </h1>
+    <section className="w-full min-h-screen">
+      {/* Başlık */}
+      <div className="bg-gradient-to-r from-blue-50 to-blue-100 py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">İletişim</h1>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Aşağıdaki bilgilerden bize ulaşabilirsiniz.
+            </p>
+          </div>
         </div>
-
+      </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 ">
         {/* İletişim Bilgileri ve Harita */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
           {/* İletişim Bilgileri */}

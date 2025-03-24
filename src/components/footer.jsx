@@ -7,7 +7,7 @@ const Footer = () => {
   const year = date.getFullYear();
 
   return (
-    <footer className="bg-[#302F44] text-white mt-32 py-12 w-full">
+    <footer className="bg-[#302F44] text-white py-12 w-full">
       <div className="max-w-7xl mx-auto px-4 md:px-0 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* İletişim Bilgileri */}
         <div className="space-y-4">
@@ -106,10 +106,10 @@ const Footer = () => {
           <ul className="space-y-2">
             <li>
               <Link
-                href="/salonumuz"
+                href="/salon"
                 className="text-gray-300 hover:text-[#5170fe]"
               >
-                İletişim
+                Kurumumuz
               </Link>
             </li>
             <li>
@@ -180,13 +180,13 @@ const Footer = () => {
           © {year} Fizyotto Plus Tokat. Tüm hakları saklıdır.
         </p>
         <p className="text-gray-300 mt-2">
-          <a href="#" className="hover:text-white">
+          <Link href="/gizlilik-politikasi" className="hover:text-white">
             Gizlilik Politikası
-          </a>{" "}
+          </Link>{" "}
           |{" "}
-          <a href="#" className="hover:text-white">
+          <Link href="/cerez-politikasi" className="hover:text-white">
             Çerez Politikası
-          </a>
+          </Link>
         </p>
       </div>
     </footer>
