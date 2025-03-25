@@ -106,10 +106,10 @@ const Iletisim = () => {
                   />
                 </svg>
                 <a
-                  href="mailto:info@fizyottoplustokat.com"
+                  href="mailto:fizyottoplustokat@gmail.com "
                   className="text-gray-600"
                 >
-                  info@fizyottoplustokat.com
+                  fizyottoplustokat@gmail.com
                 </a>
               </div>
             </div>

@@ -36,11 +36,11 @@ function Navbar() {
         <div className="flex-shrink-0 flex items-center">
           <Link href={"/"}>
             <Image
-              src="/images/fizyotto.jpeg"
+              src="/images/asdz.png"
               alt="Fizyoterapi Salonu"
               width={125}
               height={48}
-              className="object-contain rounded-[18px]"
+              className="object-contain "
             />
           </Link>
         </div>

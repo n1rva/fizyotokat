@@ -33,24 +33,26 @@ export default function Hakkimizda() {
     {
       year: "2020",
       title: "Kuruluş",
-      description: "Fizyotto olarak hizmete başladık.",
+      description:
+        "Fizyotto Markası ile fizyoterapistlere özel sosyal medya içerikleri oluşturmaya başladık.",
     },
-    // {
-    //   year: "2021",
-    //   title: "Büyüme",
-    //   description:
-    //     "Artan talep üzerine ikinci şubemizi açtık ve kadromuzu genişlettik.",
-    // },
+    {
+      year: "2021",
+      title: "Büyüme",
+      description:
+        "Fizyotto Plus Markası ile toplumsal bilinç ve faydayı gözeterek egzersiz ve sağlıklı yaşam üzerine sosyal medya içerikleri üretmeye başladık.",
+    },
     {
       year: "2023",
       title: "Teknoloji Yatırımı",
       description:
-        "Fizyoterapistleri bir araya getiren Fizyotto Live'ı kurduk.",
+        "Fizyotto Live Markası ile fizyoterapistler ve FTR öğrencileri için eğitim organizasyonları düzenlemeye başladık.",
     },
     {
       year: "2025",
       title: "Yeni Dönem",
-      description: "İlk kurumumuzu Tokat'ta hizmetinize açtık",
+      description:
+        "Fizyotto Plus Tokat, Fizyotto Plus Markasının ilk kurumu olarak Tokat'ta açıldı.",
     },
   ];
 
@@ -169,12 +171,12 @@ export default function Hakkimizda() {
                 key={index}
                 className="bg-white rounded-xl shadow-lg overflow-hidden"
               >
-                <div className="h-64 w-64 mx-auto overflow-hidden rounded-lg">
+                <div className="h-72 w-60 mx-auto overflow-hidden rounded-lg">
                   <Image
                     src={member.image}
                     alt={member.name}
-                    width={256} // Sabit genişlik
-                    height={256} // Sabit yükseklik
+                    width={256}
+                    height={256}
                     className="object-cover w-full h-full"
                   />
                 </div>

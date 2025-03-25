@@ -115,10 +115,10 @@ function GizlilikPolitikasi() {
         <p className="mb-4">
           Yukarıda sayılan haklarınızı kullanmak üzere{" "}
           <a
-            href="mailto:info@fizyottotokat.com"
+            href="mailto:fizyottoplustokat@gmail.com "
             className="text-blue-500 underline"
           >
-            info@fizyottotokat.com
+            fizyottoplustokat@gmail.com
           </a>{" "}
           üzerinden bizimle iletişime geçebilirsiniz.
         </p>
@@ -132,10 +132,10 @@ function GizlilikPolitikasi() {
           takdirde kabul etmiş olduğunuz tarafımızca varsayılacak olup, daha
           ayrıntılı bilgi için bizimle{" "}
           <a
-            href="mailto:info@fizyottotokat.com"
+            href="mailto:fizyottoplustokat@gmail.com "
             className="text-blue-500 underline"
           >
-            info@fizyottotokat.com
+            fizyottoplustokat@gmail.com
           </a>{" "}
           e-posta adresi üzerinden iletişime geçmekten lütfen çekinmeyiniz.
         </p>

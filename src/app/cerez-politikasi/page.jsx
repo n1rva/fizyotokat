@@ -90,10 +90,10 @@ function CerezPolitikasi() {
         <p className="mb-4">
           Çerezler veya bu politika hakkında sorularınız varsa, lütfen bizimle{" "}
           <a
-            href="mailto:info@fizyottotokat.com"
+            href="mailto:fizyottoplustokat@gmail.com "
             className="text-blue-500 underline"
           >
-            info@fizyottotokat.com
+            fizyottoplustokat@gmail.com
           </a>{" "}
           üzerinden iletişime geçin.
         </p>
