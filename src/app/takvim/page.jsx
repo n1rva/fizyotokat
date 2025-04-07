@@ -3,7 +3,25 @@ import { FaRegClock, FaRegCalendarAlt } from "react-icons/fa";
 
 import { FiPhone } from "react-icons/fi";
 
-import { LuInfo } from "react-icons/lu";
+export const metadata = {
+  title: "Fizyotto Tokat - Randevu Takvimi",
+  description: "Fizyotto Tokat'ta randevu almak için takvime bakın.",
+  keywords: "fizyoterapi, tokat, randevu, fizik tedavi",
+  openGraph: {
+    title: "Fizyotto Tokat - Randevu Takvimi",
+    description: "Fizyotto Tokat'ta randevu almak için takvime bakın.",
+    images: [
+      {
+        url: "https://fizyottotokat.com/images/fizyotto.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Fizyotto Tokat Logo",
+      },
+    ],
+    url: "https://fizyottotokat.com/randevu",
+    type: "website",
+  },
+};
 
 export default function PilatesCalendar() {
   const info = [
@@ -103,26 +121,6 @@ export default function PilatesCalendar() {
           </div>
         </div>
       </div>
-      {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-        <div className="w-full h-[800px] rounded-xl overflow-hidden shadow-lg">
-          <iframe
-            src="https://calendar.google.com/calendar/embed?src=4aca7a9af12ce7b4410eb0b25fe5a803d33828845d7ae990a1bd794456d37cae%40group.calendar.google.com&ctz=Europe%2FIstanbul" // YOUR_CALENDAR_ID'i kendi Google Calendar ID'nizle değiştirin
-            style={{ border: 0 }}
-            width="100%"
-            height="100%"
-            frameBorder="0"
-            scrolling="no"
-          ></iframe>
-        </div>
-
-        <div className="mt-8 text-center">
-          <p className="text-gray-600">
-            Randevu almak için takvimde uygun bir zaman seçin veya bizimle
-            iletişime geçin.
-          </p>
-        </div>
-      </div> */}
     </section>
   );
 }

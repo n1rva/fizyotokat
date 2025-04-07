@@ -1,5 +1,24 @@
-import React from "react";
-
+export const metadata = {
+  title: "Fizyotto Tokat - Çerez Politikası",
+  description:
+    "Fizyotto Tokat'ın çerez politikası hakkında bilgi alın. Çerezlerin nasıl kullanıldığını ve yönetebileceğinizi öğrenin.",
+  keywords: "fizyoterapi, tokat, çerez politikası, çerezler",
+  openGraph: {
+    title: "Fizyotto Tokat - Çerez Politikası",
+    description:
+      "Fizyotto Tokat'ın çerez politikası hakkında bilgi alın. Çerezlerin nasıl kullanıldığını ve yönetebileceğinizi öğrenin.",
+    images: [
+      {
+        url: "https://fizyottotokat.com/images/fizyotto.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Fizyotto Tokat Logo",
+      },
+    ],
+    url: "https://fizyottotokat.com/cerez-politikasi",
+    type: "website",
+  },
+};
 function CerezPolitikasi() {
   return (
     <div className="w-full">

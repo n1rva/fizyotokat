@@ -1,4 +1,24 @@
-import React from "react";
+export const metadata = {
+  title: "Fizyotto Tokat - Gizlilik Politikası",
+  description:
+    "Fizyotto Tokat'ın gizlilik politikası hakkında bilgi alın. Kişisel verilerinizin nasıl korunduğunu öğrenin.",
+  keywords: "fizyoterapi, tokat, gizlilik politikası, kişisel veriler",
+  openGraph: {
+    title: "Fizyotto Tokat - Gizlilik Politikası",
+    description:
+      "Fizyotto Tokat'ın gizlilik politikası hakkında bilgi alın. Kişisel verilerinizin nasıl korunduğunu öğrenin.",
+    images: [
+      {
+        url: "https://fizyottotokat.com/images/fizyotto.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Fizyotto Tokat Logo",
+      },
+    ],
+    url: "https://fizyottotokat.com/gizlilik-politikasi",
+    type: "website",
+  },
+};
 
 function GizlilikPolitikasi() {
   return (

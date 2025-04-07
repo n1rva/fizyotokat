@@ -1,6 +1,28 @@
 import Image from "next/image";
 import { Target, Heart, Users, Shield } from "lucide-react";
 
+export const metadata = {
+  title: "Fizyotto Tokat - Hakkımızda",
+  description:
+    "Fizyotto Tokat, uzman fizyoterapistlerle sağlık ve rehabilitasyon hizmetleri sunar. Tokat'ta sağlık ve egzersiz programları için bize ulaşın.",
+  keywords: "fizyoterapi, tokat, hakkımızda, fizyotto",
+  openGraph: {
+    title: "Fizyotto Tokat - Hakkımızda",
+    description:
+      "Fizyotto Tokat hakkında bilgi alın. Uzman fizyoterapistlerimiz ve sunduğumuz hizmetlerle ilgili detaylar.",
+    images: [
+      {
+        url: "https://fizyottotokat.com/images/fizyotto.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Fizyotto Tokat Logo",
+      },
+    ],
+    url: "https://fizyottotokat.com/hakkimizda",
+    type: "website",
+  },
+};
+
 export default function Hakkimizda() {
   const values = [
     {
@@ -77,10 +99,10 @@ export default function Hakkimizda() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
             <div className="mb-8 lg:mb-0">
-              <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl mb-6">
+              <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl mb-6">
                 Hakkımızda
               </h1>
-              <div className="text-lg text-gray-600">
+              <div className="md:text-lg text-gray-600">
                 Fizyotto Plus Tokat, işinde uzman, kendini sürekli geliştiren
                 ekibiyle hizmet üreten, kişiye özel sağlıklı yaşam programları
                 hazırlayan, uygulayan ve uygulatan, uygulamalar için ergonomik,

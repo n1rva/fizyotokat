@@ -1,4 +1,24 @@
-import React from "react";
+export const metadata = {
+  title: "Fizyotto Tokat - İletişim",
+  description:
+    "Fizyotto Tokat ile iletişime geçin. Randevu almak veya sorularınızı sormak için bize ulaşın.",
+  keywords: "fizyoterapi, tokat, iletişim, randevu",
+  openGraph: {
+    title: "Fizyotto Tokat - İletişim",
+    description:
+      "Fizyotto Tokat ile iletişime geçin. Randevu almak veya sorularınızı sormak için bize ulaşın.",
+    images: [
+      {
+        url: "https://fizyottotokat.com/images/fizyotto.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Fizyotto Tokat Logo",
+      },
+    ],
+    url: "https://fizyottotokat.com/iletisim",
+    type: "website",
+  },
+};
 
 const Iletisim = () => {
   return (

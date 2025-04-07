@@ -16,7 +16,6 @@ function Navbar() {
     setIsMenuOpen(false);
   };
 
-  // Sayfanın herhangi bir yerine tıklandığında menüyü kapat
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
