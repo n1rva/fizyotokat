@@ -76,8 +76,7 @@ function Hizmetler() {
                       src={photo}
                       alt={`${service.title} ${idx + 1}`}
                       layout="fill"
-                      objectFit="cover"
-                      className="rounded-lg"
+                      className="rounded-lg object-cover"
                     />
                   </motion.div>
                 ))}

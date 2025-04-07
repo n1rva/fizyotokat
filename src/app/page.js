@@ -165,8 +165,10 @@ export default function Home() {
                   <Image
                     src={physio.photo}
                     alt={physio.name}
-                    layout="fill"
-                    objectFit="cover"
+                    // layout="fill"
+                    width={200}
+                    height={256}
+                    className="object-cover"
                   />
                 </div>
                 <div className="flex flex-col space-y-4 w-full">
@@ -284,13 +286,13 @@ export default function Home() {
           <section className="max-w-5xl mx-auto">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
               {galleryImages.map((src, index) => (
-                <motion.img
+                <Image
                   key={index}
                   src={src}
                   alt={`Galeri ${index + 1}`}
-                  className="rounded-2xl shadow-lg w-full h-48 object-fit"
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.3 }}
+                  width={500}
+                  height={300}
+                  className="rounded-2xl shadow-lg w-fit mx-auto h-48 object-fit"
                 />
               ))}
             </div>
