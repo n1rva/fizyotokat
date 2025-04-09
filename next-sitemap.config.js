@@ -1,5 +1,5 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://fizyottoplustokat.com",
+  siteUrl: "https://www.fizyottoplustokat.com",
   generateRobotsTxt: true,
 };
